@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehedi Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .float-animation {
+        animation: float 4s ease-in-out infinite;
+      }
+
+
+.skill {
+    background-color: #f3f4f6;
+    padding: 6px 13px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+
+.skill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #f3f4f6;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #ffedd5;
+    color: #ea580c;
+    transform: translateY(-2px);
+}
+
+    </style>
+  </head>
+
+  <body class="bg-gray-50 font-['Poppins']">
+    <!-- Navbar -->
+
+     
+<nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+        <!-- Left: Name -->
+        <a href="#home" class="text-2xl font-bold text-orange-600">
+            Mehedi Hasan<span class="text-white">.</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-6 font-medium">
+            <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+            <li><a href="#project" class="hover:text-blue-400">Project</a></li>
+            <li><a href="#about" class="hover:text-blue-400">About</a></li>
+            <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+        </ul>
+
+        <!-- Desktop Resume -->
+        <a href="./Mehedi-Resume.pdf" target="_blank"
+           class="hidden md:block bg-orange-600 hover:bg-blue-700 px-6 py-2.5 rounded-lg font-semibold">
+            Resume
+        </a>
+
+        <!-- Mobile Dropdown -->
+        <details class="relative md:hidden">
+            <summary class="list-none cursor-pointer text-3xl text-white">
+                ☰
+            </summary>
+
+            <div class="absolute right-0 top-12 w-48 bg-gray-800 rounded-lg shadow-xl p-4">
+                <ul class="flex flex-col gap-4 font-medium">
+                    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="#project" class="hover:text-blue-400">Project</a></li>
+                    <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+
+                <a href="./Mehedi-Resume.pdf" target="_blank"
+                   class="block text-center mt-4 bg-orange-600 hover:bg-blue-700 px-4 py-2 rounded-lg">
+                    Resume
+                </a>
+            </div>
+        </details>
+
+    </div>
+</nav>
+
+
+    <!-- 1. Introduction Section -->
+    <section id="home" class="bg-blue-900 text-white py-24">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+
+          <h3 class="text-xl mb-3">Hello, I am</h3>
+
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Mehedi Hasan</h1>
+
+          <h2 class="text-2xl font-semibold mb-5 text-blue-200">
+            Full Stack Developer
+          </h2>
+             <div class="flex flex-wrap items-center gap-4 mb-7">
+
+    <!-- React -->
+    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/react/61DAFB" class="w-6 h-6" alt="React">
+    </div>
+
+    <!-- Next.js -->
+    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/nextdotjs/000000" class="w-6 h-6" alt="Next.js">
+    </div>
+
+    <!-- Express -->
+    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/express/000000" class="w-6 h-6" alt="Express">
+    </div>
+
+    <!-- MongoDB -->
+    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/mongodb/00A35C" class="w-6 h-6" alt="MongoDB">
+    </div>
+
+    <!-- Node.js -->
+    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/nodedotjs/339933" class="w-6 h-6" alt="Node.js">
+    </div>
+
+    <!-- JavaScript -->
+    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" class="w-6 h-6" alt="JavaScript">
+    </div>
+
+</div>
+          <p class="text-lg text-blue-100 leading-8 mb-7">
+            I am a passionate Web Developer. I love creating modern, responsive
+            and user-friendly websites. I enjoy learning new technologies and
+            building creative web applications.
+          </p>
+          
+<div class="flex flex-col sm:flex-row gap-4">
+    <a href="https://github.com/your-username"
+       target="_blank"
+       class="flex items-center justify-center gap-2 bg-orange-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-orange-600 transition">
+        
+        <i class="fa-brands fa-github text-xl"></i>
+        GitHub
+    </a>
+    <a href="#contact"
+       class="flex items-center justify-center gap-2 bg-white text-gray-900 border border-gray-300 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+        <i class="fa-solid fa-envelope text-xl"></i>
+        Contact Me
+    </a>
+
+</div>
+          
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img
+            src="./Professional Portrait Cutout.png"
+            alt="Profile Picture"
+            class="w-75 h-72 md:w-97 md:h-96 object-cover rounded-full border-8 border-white shadow-xl float-animation"
+          />
+        </div>
+      </div>
+    </section>
+
+
+<section id="project" class="bg-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class=" mb-14">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                Featured <span class="text-orange-500">Projects</span>
+            </h2>
+
+            <p class="text-gray-500 text-lg leading-8">
+                Here are some of my recent projects. Each one was built to solve real problems
+                <br class="hidden md:block">
+                and deliver exceptional user experiences.
+            </p>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 -->
+            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                <img src="./project1.png"
+                     alt="Project 1"
+                     class="w-full h-60 object-cover">
+
+                <div class="p-7">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">My First Project</h3>
+                        <a href="YOUR_PROJECT_LINK" target="_blank"
+                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
+                    </div>
+
+                    <p class="text-gray-500 leading-7 mb-7">
+                        This is my first web development project.
+                        Built with React.js, Tailwind CSS and Firebase.
+                    </p>
+
+                    <div class="flex gap-3">
+                        <a href="YOUR_GITHUB_LINK" target="_blank"
+                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                            <i class="fa-brands fa-github mr-2"></i> Details
+                        </a>
+
+                        <a href="YOUR_LIVE_LINK" target="_blank"
+                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
+                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                <img src="./project2.png"
+                     alt="Project 2"
+                     class="w-full h-60 object-cover">
+
+                <div class="p-7">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">My Second Project</h3>
+                        <a href="YOUR_PROJECT_LINK" target="_blank"
+                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
+                    </div>
+
+                    <p class="text-gray-500 leading-7 mb-7">
+                        A modern and responsive website with
+                        user-friendly design and interactive features.
+                    </p>
+
+                    <div class="flex gap-3">
+                        <a href="YOUR_GITHUB_LINK" target="_blank"
+                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                            <i class="fa-brands fa-github mr-2"></i> Details
+                        </a>
+
+                        <a href="YOUR_LIVE_LINK" target="_blank"
+                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
+                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+                <img src="./project3.png"
+                     alt="Project 3"
+                     class="w-full h-60 object-cover">
+
+                <div class="p-7">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-semibold">My Third Project</h3>
+                        <a href="YOUR_PROJECT_LINK" target="_blank"
+                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
+                    </div>
+
+                    <p class="text-gray-500 leading-7 mb-7">
+                        A full-stack web application built with
+                        modern technologies and responsive design.
+                    </p>
+
+                    <div class="flex gap-3">
+                        <a href="YOUR_GITHUB_LINK" target="_blank"
+                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                            <i class="fa-brands fa-github mr-2"></i> Details
+                        </a>
+
+                        <a href="YOUR_LIVE_LINK" target="_blank"
+                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
+                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="py-20 px-6 bg-gradient-to-r from-orange-50 to-blue-50">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Skills & <span class="text-orange-500">Technology</span>
+            </h2>
+
+            <p class="text-gray-500 text-lg leading-8">
+                A comprehensive overview of my technical expertise across the full stack,
+                <br class="hidden md:block">
+                from frontend interfaces to backend systems.
+            </p>
+        </div>
+
+        <!-- Skills Cards -->
+         
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+    <!-- Frontend -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-code text-3xl text-blue-500"></i>
+            <h3 class="text-2xl font-semibold">Frontend</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-brands fa-html5 text-orange-500"></i> HTML5</span>
+            <span class="skill"><i class="fa-brands fa-css3-alt text-blue-500"></i> CSS3</span>
+            <span class="skill"><i class="fa-brands fa-js text-yellow-500"></i> JavaScript</span>
+            <span class="skill"><i class="fa-brands fa-react text-cyan-500"></i> React.js</span>
+            <span class="skill"><i class="fa-solid fa-wind text-cyan-500"></i> Tailwind CSS</span>
+            <span class="skill"><i class="fa-brands fa-bootstrap text-purple-600"></i> Bootstrap</span>
+        </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-server text-3xl text-green-500"></i>
+            <h3 class="text-2xl font-semibold">Backend</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-brands fa-node-js text-green-600"></i> Node.js</span>
+            <span class="skill"><i class="fa-solid fa-server text-gray-600"></i> Express.js</span>
+            <span class="skill"><i class="fa-solid fa-code text-blue-500"></i> REST API</span>
+            <span class="skill"><i class="fa-solid fa-fire text-orange-500"></i> Firebase Auth</span>
+        </div>
+    </div>
+
+    <!-- Database -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-database text-3xl text-yellow-500"></i>
+            <h3 class="text-2xl font-semibold">Database</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-solid fa-leaf text-green-600"></i> MongoDB</span>
+            <span class="skill"><i class="fa-solid fa-fire text-orange-500"></i> Firebase</span>
+            <span class="skill"><i class="fa-solid fa-database text-green-500"></i> Mongoose</span>
+        </div>
+    </div>
+
+    <!-- Styling -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-palette text-3xl text-orange-500"></i>
+            <h3 class="text-2xl font-semibold">Styling & Design</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-solid fa-wind text-cyan-500"></i> Tailwind CSS</span>
+            <span class="skill"><i class="fa-brands fa-bootstrap text-purple-600"></i> Bootstrap</span>
+            <span class="skill"><i class="fa-solid fa-mobile-screen text-blue-500"></i> Responsive Design</span>
+            <span class="skill"><i class="fa-solid fa-columns text-blue-500"></i> Flexbox</span>
+            <span class="skill"><i class="fa-solid fa-table-cells text-orange-500"></i> CSS Grid</span>
+        </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-screwdriver-wrench text-3xl text-purple-500"></i>
+            <h3 class="text-2xl font-semibold">Tools & Workflow</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-brands fa-git-alt text-orange-500"></i> Git</span>
+            <span class="skill"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill"><i class="fa-solid fa-code text-blue-500"></i> VS Code</span>
+            <span class="skill"><i class="fa-brands fa-npm text-red-500"></i> npm</span>
+            <span class="skill"><i class="fa-solid fa-bolt text-yellow-500"></i> Vite</span>
+            <span class="skill"><i class="fa-solid fa-globe text-green-500"></i> Netlify</span>
+        </div>
+    </div>
+
+    <!-- Currently Learning -->
+    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition">
+        <div class="flex items-center gap-5 mb-10">
+            <i class="fa-solid fa-book-open text-3xl text-pink-500"></i>
+            <h3 class="text-2xl font-semibold">Currently Learning</h3>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="skill"><i class="fa-solid fa-code text-blue-500"></i> TypeScript</span>
+            <span class="skill"><i class="fa-solid fa-layer-group text-black"></i> Next.js</span>
+            <span class="skill"><i class="fa-solid fa-arrows-rotate text-purple-500"></i> Redux</span>
+            <span class="skill"><i class="fa-brands fa-react text-cyan-500"></i> Advanced React</span>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+</section>
+
+
+<section id="why-me" class="bg-gradient-to-r from-orange-50 via-purple-50 to-blue-50 py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class=" mb-20">
+
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-5">
+                Why <span class="text-orange-500">Work With Me</span>
+            </h2>
+
+            <p class="text-gray-500 text-lg leading-8">
+                I build scalable, high-performance applications with a strong focus on clean architecture and
+                <br class="hidden md:block">
+                exceptional user experience.
+            </p>
+
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-solid fa-layer-group text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    End-to-End Development
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    From database architecture to pixel-perfect frontend interfaces,
+                    I handle the entire stack seamlessly.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-solid fa-code text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    Clean, Maintainable Code
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    I write clean, organized and reusable code that is easy
+                    to read, maintain and scale.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-solid fa-bolt text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    Performance Optimized
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    I build fast, responsive applications that provide
+                    smooth and excellent user experiences.
+                </p>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-solid fa-rocket text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    Modern Tech Stack
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    I work with modern technologies like React.js, Node.js,
+                    Express.js and MongoDB.
+                </p>
+
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-regular fa-message text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    Clear Communication
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    I believe in clear communication, teamwork and
+                    understanding project requirements.
+                </p>
+
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white/80 p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition duration-300">
+
+                <div class="w-15 h-15 bg-orange-100 rounded-2xl flex items-center justify-center mb-7">
+                    <i class="fa-regular fa-circle-check text-2xl text-orange-500"></i>
+                </div>
+
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                    Reliable Delivery
+                </h3>
+
+                <p class="text-gray-500 leading-7">
+                    I focus on delivering quality work, following project
+                    requirements and meeting agreed deadlines.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="bg-gray-100 py-20 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Contact <span class="text-orange-500">Me</span>
+            </h2>
+
+            <p class="text-gray-500 text-lg">
+                Have a project in mind? Let's work together!
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="max-w-2xl mx-auto bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-200">
+
+            <form id="contact-form" class="space-y-5">
+
+                <!-- Name -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Your Name
+                    </label>
+                    <input
+                        type="text"
+                        name="from_name"
+                        placeholder="Enter your name"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Your Email
+                    </label>
+                    <input
+                        type="email"
+                        name="from_email"
+                        placeholder="Enter your email"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400">
+                </div>
+
+                <!-- Subject -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Subject
+                    </label>
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Enter subject"
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400">
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label class="block text-gray-700 font-semibold mb-2">
+                        Your Message
+                    </label>
+                    <textarea
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    id="submit-btn"
+                    class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-bold text-lg transition duration-300">
+
+                    <i class="fa-solid fa-paper-plane mr-2"></i>
+                    Send Message
+                </button>
+
+                <!-- Status -->
+                <p id="form-status" class="text-center font-medium"></p>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-gray-950 text-white pt-14 pb-6">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Footer Main -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-gray-800">
+
+            <!-- Logo & About -->
+            <div>
+                <h2 class="text-3xl font-bold text-orange-600 mb-4">
+                    Mehedi Hasan<span class="text-orange-500">.</span>
+                </h2>
+
+                <p class="text-gray-400 leading-7 max-w-sm">
+                    Full Stack Developer passionate about building
+                    modern, responsive and user-friendly web applications.
+                    Always learning and creating something new.
+                </p>
+
+                <div class="flex gap-4 mt-6 text-xl">
+                    <a href="https://facebook.com/" target="_blank"
+                       class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://github.com/your-username" target="_blank"
+                       class="text-gray-400 hover:text-white transition">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/" target="_blank"
+                       class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:mehedihasanmehedi099@gmail.com"
+                       class="text-gray-400 hover:text-orange-500 transition">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-5">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-3 text-gray-400">
+                    <li>
+                        <a href="#home" class="hover:text-orange-500 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="hover:text-orange-500 transition">
+                            About Me
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#project" class="hover:text-orange-500 transition">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="hover:text-orange-500 transition">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="hover:text-orange-500 transition">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-semibold mb-5">
+                    Get In Touch
+                </h3>
+
+                <div class="space-y-4 text-gray-400">
+
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-orange-500"></i>
+                        <a href="mailto:mehedihasanmehedi099@gmail.com"
+                           class="hover:text-white transition break-all">
+                            mehedihasanmehedi099@gmail.com
+                        </a>
+                    </p>
+
+                    <p class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-orange-500"></i>
+                        <span>Available for Web Projects</span>
+                    </p>
+
+                </div>
+
+                <a href="#contact"
+                   class="inline-block mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    Let's Talk
+                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-6 text-center">
+
+            <p class="text-gray-500 text-sm">
+                © 2026 Mehedi Hasan. All Rights Reserved.
+            </p>
+
+            <p class="text-gray-500 text-sm">
+                Designed & Developed with
+                <i class="fa-solid fa-heart text-red-500"></i>
+                by Mehedi Hasan
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    (function () {
+        emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY"
+        });
+    })();
+
+    const contactForm = document.getElementById("contact-form");
+    const submitBtn = document.getElementById("submit-btn");
+    const formStatus = document.getElementById("form-status");
+
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Sending...";
+        formStatus.innerText = "";
+
+        emailjs.sendForm(
+            "YOUR_SERVICE_ID",
+            "YOUR_TEMPLATE_ID",
+            contactForm
+        )
+        .then(function () {
+            formStatus.innerText = "Message sent successfully!";
+            formStatus.className = "text-center text-green-600 font-medium";
+
+            contactForm.reset();
+        })
+        .catch(function (error) {
+            console.error("EmailJS Error:", error);
+
+            formStatus.innerText = "Message could not be sent. Please try again.";
+            formStatus.className = "text-center text-red-600 font-medium";
+        })
+        .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Send Message";
+        });
+    });
+</script>
+
+  </body>
+</html>
