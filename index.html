@@ -208,128 +208,180 @@
 </section>
 
 
-<section id="project" class="bg-white py-16 px-6">
-    <div class="max-w-7xl mx-auto">
+ <section id="project" class="w-full bg-white py-16 md:py-20 px-4 sm:px-6 border-b border-slate-100">
+  <div class="max-w-[1120px] mx-auto">
 
-        <!-- Section Heading -->
-        <div class=" mb-14">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                Featured <span class="text-orange-500">Projects</span>
-            </h2>
+    <!-- Section Heading -->
+    <div class="mb-12 md:mb-14">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
+        Featured <span class="text-orange-500">Projects</span>
+      </h2>
 
-            <p class="text-gray-500 text-lg leading-8">
-                Here are some of my recent projects. Each one was built to solve real problems
-                <br class="hidden md:block">
-                and deliver exceptional user experiences.
-            </p>
-        </div>
-
-        <!-- Project Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Project 1 -->
-            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-                <img src="./project1.png"
-                     alt="Project 1"
-                     class="w-full h-60 object-cover">
-
-                <div class="p-7">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-semibold">My First Project</h3>
-                        <a href="YOUR_PROJECT_LINK" target="_blank"
-                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
-                    </div>
-
-                    <p class="text-gray-500 leading-7 mb-7">
-                        This is my first web development project.
-                        Built with React.js, Tailwind CSS and Firebase.
-                    </p>
-
-                    <div class="flex gap-3">
-                        <a href="YOUR_GITHUB_LINK" target="_blank"
-                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
-                            <i class="fa-brands fa-github mr-2"></i> Details
-                        </a>
-
-                        <a href="YOUR_LIVE_LINK" target="_blank"
-                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
-                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-                <img src="./project2.png"
-                     alt="Project 2"
-                     class="w-full h-60 object-cover">
-
-                <div class="p-7">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-semibold">My Second Project</h3>
-                        <a href="YOUR_PROJECT_LINK" target="_blank"
-                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
-                    </div>
-
-                    <p class="text-gray-500 leading-7 mb-7">
-                        A modern and responsive website with
-                        user-friendly design and interactive features.
-                    </p>
-
-                    <div class="flex gap-3">
-                        <a href="YOUR_GITHUB_LINK" target="_blank"
-                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
-                            <i class="fa-brands fa-github mr-2"></i> Details
-                        </a>
-
-                        <a href="YOUR_LIVE_LINK" target="_blank"
-                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
-                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
-
-                <img src="./project3.png"
-                     alt="Project 3"
-                     class="w-full h-60 object-cover">
-
-                <div class="p-7">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-xl font-semibold">My Third Project</h3>
-                        <a href="YOUR_PROJECT_LINK" target="_blank"
-                           class="text-gray-500 text-2xl hover:text-orange-500">↗</a>
-                    </div>
-
-                    <p class="text-gray-500 leading-7 mb-7">
-                        A full-stack web application built with
-                        modern technologies and responsive design.
-                    </p>
-
-                    <div class="flex gap-3">
-                        <a href="YOUR_GITHUB_LINK" target="_blank"
-                           class="flex-1 text-center bg-gray-100 border border-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-200">
-                            <i class="fa-brands fa-github mr-2"></i> Details
-                        </a>
-
-                        <a href="YOUR_LIVE_LINK" target="_blank"
-                           class="flex-1 text-center bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600">
-                            <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      <p class="text-slate-500 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+        Here are some of my recent projects. Each one was built to solve real problems
+        and deliver exceptional user experiences.
+      </p>
     </div>
-</section>
 
+    <!-- Project Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
+
+      <!-- Project 1 -->
+      <div class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+        <div class="w-full h-56 overflow-hidden bg-slate-100">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+            alt="Web Application Dashboard"
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="text-xl font-bold text-slate-900">My First Project</h3>
+              <a
+                href="YOUR_PROJECT_LINK"
+                target="_blank"
+                rel="noreferrer"
+                class="text-slate-400 text-2xl hover:text-orange-500 transition"
+              >
+                ↗
+              </a>
+            </div>
+
+            <p class="text-slate-500 text-sm sm:text-base leading-relaxed mb-6">
+              This is my first web development project. Built with React.js, Tailwind CSS and Firebase.
+            </p>
+          </div>
+
+          <div class="flex gap-3">
+            <a
+              href="YOUR_GITHUB_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-slate-100 text-slate-800 border border-slate-200 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-slate-200 transition"
+            >
+              <i class="fa-brands fa-github mr-1.5"></i> Details
+            </a>
+
+            <a
+              href="YOUR_LIVE_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-orange-500 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-orange-600 transition"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+        <div class="w-full h-56 overflow-hidden bg-slate-100">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+            alt="E-Commerce & Analytics Website"
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="text-xl font-bold text-slate-900">My Second Project</h3>
+              <a
+                href="YOUR_PROJECT_LINK"
+                target="_blank"
+                rel="noreferrer"
+                class="text-slate-400 text-2xl hover:text-orange-500 transition"
+              >
+                ↗
+              </a>
+            </div>
+
+            <p class="text-slate-500 text-sm sm:text-base leading-relaxed mb-6">
+              A modern and responsive website with user-friendly design and interactive features.
+            </p>
+          </div>
+
+          <div class="flex gap-3">
+            <a
+              href="YOUR_GITHUB_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-slate-100 text-slate-800 border border-slate-200 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-slate-200 transition"
+            >
+              <i class="fa-brands fa-github mr-1.5"></i> Details
+            </a>
+
+            <a
+              href="YOUR_LIVE_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-orange-500 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-orange-600 transition"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+        <div class="w-full h-56 overflow-hidden bg-slate-100">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+            alt="Full Stack Web Application"
+            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div class="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="text-xl font-bold text-slate-900">My Third Project</h3>
+              <a
+                href="YOUR_PROJECT_LINK"
+                target="_blank"
+                rel="noreferrer"
+                class="text-slate-400 text-2xl hover:text-orange-500 transition"
+              >
+                ↗
+              </a>
+            </div>
+
+            <p class="text-slate-500 text-sm sm:text-base leading-relaxed mb-6">
+              A full-stack web application built with modern technologies and responsive design.
+            </p>
+          </div>
+
+          <div class="flex gap-3">
+            <a
+              href="YOUR_GITHUB_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-slate-100 text-slate-800 border border-slate-200 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-slate-200 transition"
+            >
+              <i class="fa-brands fa-github mr-1.5"></i> Details
+            </a>
+
+            <a
+              href="YOUR_LIVE_LINK"
+              target="_blank"
+              rel="noreferrer"
+              class="flex-1 text-center bg-orange-500 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-orange-600 transition"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section id="skills" class="py-20 px-6 bg-gradient-to-r from-orange-50 to-blue-50">
     <div class="max-w-7xl mx-auto">
